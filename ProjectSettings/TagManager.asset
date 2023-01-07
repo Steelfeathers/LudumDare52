@@ -7,6 +7,7 @@ TagManager:
   - Harvestable
   - SelectionRadius
   - PickupRadius
+  - Interactable
   layers:
   - Default
   - TransparentFX

@@ -4,6 +4,11 @@ using UnityEngine;
 
 namespace LudumDare52
 {
+    public enum ItemRarity
+    {
+        
+    }
+    
     [CreateAssetMenu(menuName = "LudumDare52/Item", fileName = "Item", order = 0)]
     public class ItemTemplate : ScriptableObject
     {

@@ -69,7 +69,7 @@ namespace LudumDare52
         {
             if (other.CompareTag("PickupRadius"))
             {
-                GameManager.Instance.AddItemToInventory(myItem.Id);
+                InventoryManager.Instance.AddItemToInventory(myItem.Id);
                 GameObject.Destroy(gameObject);
             }
         }

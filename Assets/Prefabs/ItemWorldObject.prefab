@@ -185,8 +185,8 @@ MonoBehaviour:
   pickupTriggerCollider: {fileID: 5797091757624004166}
   spriteRenderer: {fileID: 9034409864368866150}
   dropBounceForce: 5
-  pickupDelay: 1
-  pickupMoveSpeed: 30
+  pickupDelay: 0.7
+  pickupMoveSpeed: 45
   maxPickupDist: 8
 --- !u!212 &9034409865393335862
 SpriteRenderer:

@@ -1,18 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class ItemUIObject : MonoBehaviour
+namespace LudumDare52
 {
-    // Start is called before the first frame update
-    void Start()
+    public class ItemUIObject : MonoBehaviour
     {
-        
-    }
+        [SerializeField] private Image image;
+        [SerializeField] private TextMeshProUGUI amountText;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        private ItemTemplate template;
+        private int amount;
+
+        public void Initialize(ItemTemplate _template, int _amount)
+        {
+            template = _template;
+            amount = _amount;
+
+            image.sprite = template.Sprite;
+            amountText.text = amount.ToString();
+        }
     }
 }
