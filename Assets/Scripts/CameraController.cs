@@ -9,7 +9,6 @@ namespace LudumDare52
     public class CameraController : MonoBehaviour
     {
         private Camera cam;
-        private GameObject player;
 
         private void Start()
         {
@@ -18,11 +17,8 @@ namespace LudumDare52
 
         private void LateUpdate()
         {
-            if (player == null || !player.activeInHierarchy)
-                player = GameObject.FindWithTag("Player");
-            
-            if (player == null) return;
-            transform.position = new Vector3(player.transform.position.x, player.transform.position.y, transform.position.z);
+            if (GameManager.Instance.PlayerObj == null) return;
+            transform.position = new Vector3(GameManager.Instance.PlayerObj.transform.position.x, GameManager.Instance.PlayerObj.transform.position.y, transform.position.z);
         }
     }
 }

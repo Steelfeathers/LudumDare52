@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Harvestable
+  - SelectionRadius
+  - PickupRadius
   layers:
   - Default
   - TransparentFX
@@ -39,9 +41,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 693445819
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
   - name: UI
     uniqueID: 1163839273
+    locked: 0
+  - name: Overlay
+    uniqueID: 1873500425
     locked: 0
